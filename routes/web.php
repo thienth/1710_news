@@ -31,7 +31,15 @@ Route::get('lien-he', function(){
 
 // trang chu/danh muc/chitiet
 Route::get('/{slug?}', function($slug = null){
-	return "trang chu";
+	if(!$slug){
+
+		$name = 'le dinh duc';
+		$age = 25;
+		$gender = 10;
+		$bio = "<strong>Rat dep trai!!!!</strong>";
+		// hien thi giao dien trang chu
+		return view('homepage', compact('name', 'age', 'bio', 'gender'));
+	}
 })->name('homepage');
 
 
