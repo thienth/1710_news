@@ -36,9 +36,11 @@ Route::get('/{slug?}', function($slug = null){
 		$name = 'le dinh duc';
 		$age = 25;
 		$gender = 10;
+
+		$arr = ['a', 'b', 'c'];
 		$bio = "<strong>Rat dep trai!!!!</strong>";
 		// hien thi giao dien trang chu
-		return view('homepage', compact('name', 'age', 'bio', 'gender'));
+		return view('homepage', compact('name', 'age', 'bio', 'gender', 'arr'));
 	}
 })->name('homepage');
 

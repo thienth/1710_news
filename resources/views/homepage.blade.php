@@ -9,3 +9,7 @@ Hello world, {{$name}} - {{$age}} tuoi!
 				@endif
 </p>
 <p>{!! $bio !!}</p>
+
+@foreach ($arr as $element)
+	<p>{{$loop->remaining}} => {{$element}}</p>
+@endforeach
