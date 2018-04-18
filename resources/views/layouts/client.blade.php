@@ -63,7 +63,6 @@
   <script src="{{ asset('games/javascript/bossthemes/bootstrap-select.js')}}" type="text/javascript">
   </script>
   <script type="text/javascript">
-  <!--
   $(document).ready(function() {
   "use strict";
     var loader = $("body").DEPreLoad({
@@ -77,10 +76,8 @@
         }
     });
   });
-  //-->
   </script>
   <script type="text/javascript">
-  <!--
   $(window).scroll(function() {
   "use strict";
     var height_header = $('#bt_header').height();           
@@ -91,7 +88,6 @@
         $('.bt-comb').removeClass('bt-menu-fixed animated');
     }
   });
-  //-->
   </script>
   
 </head>
