@@ -31,7 +31,7 @@ Route::get('lien-he', function(){
 
 Route::get('test-layout', function(){
 	return view('test');
-})
+});
 // trang chu/danh muc/chitiet
 Route::get('/{slug?}', function($slug = null){
 	if(!$slug){
@@ -50,7 +50,7 @@ Route::get('/{slug?}', function($slug = null){
 
 		];
 		// hien thi giao dien trang chu
-		return view('homepage', compact('people'));
+		return view('layouts.client', compact('people'));
 	}
 })->name('homepage');
 
