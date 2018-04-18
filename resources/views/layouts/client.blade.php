@@ -153,8 +153,7 @@
                         <tr>
                           <td class="text-center">
                             <div class="image">
-                              <a href="pages/product.html"><img alt="Dolorpelle accus antium" class="img-thumbnail" src=
-                              "images/catalog/bt_product/demo_110x154.jpg')}}" title="Dolorpelle accus antium"></a>
+                              <a href="pages/product.html"><img alt="Dolorpelle accus antium" class="img-thumbnail" src="{{asset('games/images/catalog/bt_product/demo_110x154.jpg')}}" title="Dolorpelle accus antium"></a>
 
                               <div class="remove">
                                 <button class="btn-remove" title="Remove" type="button"><i class="fa fa-times"></i></button>
@@ -178,8 +177,7 @@
                         <tr>
                           <td class="text-center">
                             <div class="image">
-                              <a href="pages/product.html"><img alt="Donec vitae accus antium" class="img-thumbnail" src=
-                              "images/catalog/bt_product/demo_110x154.jpg')}}" title="Donec vitae accus antium"></a>
+                              <a href="pages/product.html"><img alt="Donec vitae accus antium" class="img-thumbnail" src="{{asset('games/images/catalog/bt_product/demo_110x154.jpg')}}" title="Donec vitae accus antium"></a>
 
                               <div class="remove">
                                 <button class="btn-remove" title="Remove" type="button"><i class="fa fa-times"></i></button>
@@ -203,8 +201,7 @@
                         <tr>
                           <td class="text-center">
                             <div class="image">
-                              <a href="pages/product.html"><img alt="Duis lacus tempor" class="img-thumbnail" src=
-                              "images/catalog/bt_product/demo_110x154.jpg')}}" title="Duis lacus tempor"></a>
+                              <a href="pages/product.html"><img alt="Duis lacus tempor" class="img-thumbnail" src="{{asset('games/images/catalog/bt_product/demo_110x154.jpg')}}" title="Duis lacus tempor"></a>
 
                               <div class="remove">
                                 <button class="btn-remove" title="Remove" type="button"><i class="fa fa-times"></i></button>
@@ -314,14 +311,12 @@
 
                         <ul class="dropdown-menu">
                           <li>
-                            <a href="en"><span class="text-left">English</span> <span class="text-right"><img alt="English" src=
-                            "images/flags/gb.png')}}" title="English"></span></a>
+                            <a href="en"><span class="text-left">English</span> <span class="text-right"><img alt="English" src="{{asset('games/images/flags/gb.png')}}" title="English"></span></a>
                           </li>
 
 
                           <li>
-                            <a href="de"><span class="text-left">Deutsch</span> <span class="text-right"><img alt="Deutsch" src=
-                            "images/flags/de.png')}}" title="Deutsch"></span></a>
+                            <a href="de"><span class="text-left">Deutsch</span> <span class="text-right"><img alt="Deutsch" src="{{asset('games/images/flags/de.png')}}" title="Deutsch"></span></a>
                           </li>
                         </ul>
                       </div>
@@ -462,8 +457,7 @@
                             <div class="staticblock">
                               <div class="bt-store">
                                 <div class="bt-image">
-                                  <a href="http://demo.bossthemes.com/html/leather_baby/" title="Baby Store"><img alt="Baby Store" src=
-                                  "images/catalog/bt_leather/baby.jpg')}}"></a>
+                                  <a href="http://demo.bossthemes.com/html/leather_baby/" title="Baby Store"><img alt="Baby Store" src="{{asset('games/images/catalog/bt_leather/baby.jpg')}}"></a>
                                 </div>
                                 <a href="http://demo.bossthemes.com/html/leather_baby/" title="Modatica Store">Baby Store</a>
                               </div>
@@ -496,8 +490,7 @@
                             <div class="staticblock">
                               <div class="bt-store">
                                 <div class="bt-image">
-                                  <a href="http://demo.bossthemes.com/html/leather_drug/" title="Drug Store"><img alt="Drug Store" src=
-                                  "images/catalog/bt_leather/drug.jpg')}}"></a>
+                                  <a href="http://demo.bossthemes.com/html/leather_drug/" title="Drug Store"><img alt="Drug Store" src="{{asset('games/images/catalog/bt_leather/drug.jpg')}}"></a>
                                 </div>
                                 <a href="http://demo.bossthemes.com/html/leather_drug/" title="Leathertica Store">Drug Store</a>
                               </div>
@@ -512,8 +505,7 @@
                             <div class="staticblock">
                               <div class="bt-store">
                                 <div class="bt-image">
-                                  <a href="http://demo.bossthemes.com/html/leather_eye/" title="Eye Store"><img alt="Eye Store" src=
-                                  "images/catalog/bt_leather/eye.jpg')}}"></a>
+                                  <a href="http://demo.bossthemes.com/html/leather_eye/" title="Eye Store"><img alt="Eye Store" src="{{asset('games/images/catalog/bt_leather/eye.jpg')}}"></a>
                                 </div>
                                 <a href="http://demo.bossthemes.com/html/leather_eye/" title="Leathertica Store">Eye Store</a>
                               </div>
@@ -528,8 +520,7 @@
                             <div class="staticblock">
                               <div class="bt-store">
                                 <div class="bt-image">
-                                  <a href="http://demo.bossthemes.com/html/leather_game/" title="Game Store"><img alt="Game Store" src=
-                                  "images/catalog/bt_leather/game.jpg')}}"></a>
+                                  <a href="http://demo.bossthemes.com/html/leather_game/" title="Game Store"><img alt="Game Store" src="{{asset('games/images/catalog/bt_leather/game.jpg')}}"></a>
                                 </div>
                                 <a href="http://demo.bossthemes.com/html/leather_game/" title="Leathertica Store">Game Store</a>
                               </div>
@@ -560,8 +551,7 @@
                             <div class="staticblock">
                               <div class="bt-store">
                                 <div class="bt-image">
-                                  <a href="http://demo.bossthemes.com/html/leather_digistore/" title="Digistore"><img alt="Digistore" src=
-                                  "images/catalog/bt_leather/digistore.jpg')}}"></a>
+                                  <a href="http://demo.bossthemes.com/html/leather_digistore/" title="Digistore"><img alt="Digistore" src="{{asset('games/images/catalog/bt_leather/digistore.jpg')}}"></a>
                                 </div>
                                 <a href="http://demo.bossthemes.com/html/leather_digistore/" title="Digistore">Digistore</a>
                               </div>
@@ -577,7 +567,7 @@
                       <a href="pages/category.html">Shop</a>
 
                       <div class="dropdown drop-grid-6-6">
-                        <div class="menu-row row-col-6" style=" background-image: url(images/catalog/bt_leather/bgr-menu2.jpg)">
+                        <div class="menu-row row-col-6" style=" background-image: url({{asset('games/images/catalog/bt_leather/bgr-menu2.jpg')}})">
                           <div class="menu-column row-grid-1">
                             <!-- html-->
 
@@ -631,8 +621,7 @@
                                 <!--style="width: 590px;"-->
 
                                 <div class="image">
-                                  <a href="pages/product.html"><img alt="Assumenda accus antium" src=
-                                  "images/catalog/bt_product/demo_200x280.jpg')}}"></a><br>
+                                  <a href="pages/product.html"><img alt="Assumenda accus antium" src="{{asset('games/images/catalog/bt_product/demo_200x280.jpg')}}"></a><br>
                                 </div>
 
 
@@ -872,7 +861,7 @@
                       <a href="pages/bossblog.html">BLOG</a>
 
                       <div class="dropdown drop-grid-6-1">
-                        <div class="menu-row row-col-1" style=" background-image: url(images/catalog/bt_leather/bgr-menu4.jpg)">
+                        <div class="menu-row row-col-1" style=" background-image: url({{asset('games/images/catalog/bt_leather/bgr-menu4.jpg')}})">
                           <div class="menu-column row-grid-1">
                             <!-- html-->
 
@@ -937,8 +926,7 @@
                   data-transition="slideup">
                     <!-- MAIN IMAGE -->
                     <img alt="slidebg1" data-bgposition="left center" data-bgpositionend="right center" data-duration="14000" data-ease=
-                    "Linear.easeNone" data-kenburns="off" data-lazyload="images/catalog/bt_leather/demo_1920x900.jpg')}}" src=
-                    "images/catalog/bt_leather/dummy.png')}}"> <!-- LAYER NR. 1 -->
+                    "Linear.easeNone" data-kenburns="off" data-lazyload="{{asset('games/images/catalog/bt_leather/demo_1920x900.jpg')}}" src="{{asset('games/images/catalog/bt_leather/dummy.png')}}"> <!-- LAYER NR. 1 -->
 
 
                     <div class="tp-caption large_white_text lft customout rs-parallaxlevel-0" data-customout=
@@ -982,8 +970,7 @@
                   data-transition="fade">
                     <!-- MAIN IMAGE -->
                     <img alt="slidebg1" data-bgposition="left center" data-bgpositionend="right center" data-duration="14000" data-ease=
-                    "Linear.easeNone" data-kenburns="off" data-lazyload="images/catalog/bt_leather/demo_1920x900.jpg')}}" src=
-                    "images/catalog/bt_leather/dummy.png')}}"> <!-- LAYER NR. 1 -->
+                    "Linear.easeNone" data-kenburns="off" data-lazyload="{{asset('games/images/catalog/bt_leather/demo_1920x900.jpg')}}" src="{{asset('games/images/catalog/bt_leather/dummy.png')}}"> <!-- LAYER NR. 1 -->
 
 
                     <div class="tp-caption large_white_text randomrotate stt rs-parallaxlevel-0" data-customout=
@@ -1027,8 +1014,7 @@
                   data-transition="slideup">
                     <!-- MAIN IMAGE -->
                     <img alt="slidebg1" data-bgposition="left center" data-bgpositionend="right center" data-duration="14000" data-ease=
-                    "Linear.easeNone" data-kenburns="on" data-lazyload="images/catalog/bt_leather/demo_1920x900.jpg')}}" src=
-                    "images/catalog/bt_leather/dummy.png')}}"> <!-- LAYER NR. 1 -->
+                    "Linear.easeNone" data-kenburns="on" data-lazyload="{{asset('games/images/catalog/bt_leather/demo_1920x900.jpg')}}" src="{{asset('games/images/catalog/bt_leather/dummy.png')}}"> <!-- LAYER NR. 1 -->
 
 
                     <div class="tp-caption large_white_text randomrotate customout rs-parallaxlevel-0" data-customout=
@@ -1220,8 +1206,7 @@
               <div class="box-product">
                 <div class="box_item">
                   <div class="image">
-                    <a href="pages/product.html"><img alt="Morbi id accus antium doloremque" class="img-responsive" src=
-                    "images/catalog/bt_product/demo_120x168.jpg')}}" title="Morbi id accus antium doloremque"></a>
+                    <a href="pages/product.html"><img alt="Morbi id accus antium doloremque" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_120x168.jpg')}}" title="Morbi id accus antium doloremque"></a>
                   </div>
 
 
@@ -1245,8 +1230,7 @@
 
                 <div class="box_item">
                   <div class="image">
-                    <a href="pages/product.html"><img alt="Dolorpelle accus antium" class="img-responsive" src=
-                    "images/catalog/bt_product/demo_120x168.jpg')}}" title="Dolorpelle accus antium"></a>
+                    <a href="pages/product.html"><img alt="Dolorpelle accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_120x168.jpg')}}" title="Dolorpelle accus antium"></a>
                   </div>
 
 
@@ -1275,8 +1259,7 @@
 
                 <div class="box_item">
                   <div class="image">
-                    <a href="pages/product.html"><img alt="Suspendisse accus antium" class="img-responsive" src=
-                    "images/catalog/bt_product/demo_120x168.jpg')}}" title="Suspendisse accus antium"></a>
+                    <a href="pages/product.html"><img alt="Suspendisse accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_120x168.jpg')}}" title="Suspendisse accus antium"></a>
                   </div>
 
 
@@ -1306,8 +1289,7 @@
 
                 <div class="box_item">
                   <div class="image">
-                    <a href="pages/product.html"><img alt="Vestibulum accus antium" class="img-responsive" src=
-                    "images/catalog/bt_product/demo_120x168.jpg')}}" title="Vestibulum accus antium"></a>
+                    <a href="pages/product.html"><img alt="Vestibulum accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_120x168.jpg')}}" title="Vestibulum accus antium"></a>
                   </div>
 
 
@@ -1396,8 +1378,7 @@
               <ol>
                 <li class="item">
                   <div class="image">
-                    <a href="pages/article.html"><img alt=" Donec adipiscing nisl" class="img-responsive" src=
-                    "images/catalog/bossblog/demo_80x80.jpg')}}"></a>
+                    <a href="pages/article.html"><img alt=" Donec adipiscing nisl" class="img-responsive" src="{{asset('games/images/catalog/bossblog/demo_80x80.jpg')}}"></a>
                   </div>
 
 
@@ -1420,8 +1401,7 @@
 
                 <li class="item">
                   <div class="image">
-                    <a href="pages/article.html"><img alt="ultricies non placerat nec" class="img-responsive" src=
-                    "images/catalog/bossblog/demo_80x80.jpg')}}"></a>
+                    <a href="pages/article.html"><img alt="ultricies non placerat nec" class="img-responsive" src="{{asset('games/images/catalog/bossblog/demo_80x80.jpg')}}"></a>
                   </div>
 
 
@@ -1444,8 +1424,7 @@
 
                 <li class="item">
                   <div class="image">
-                    <a href="pages/article.html"><img alt="Phasellus a congue est" class="img-responsive" src=
-                    "images/catalog/bossblog/demo_80x80.jpg')}}"></a>
+                    <a href="pages/article.html"><img alt="Phasellus a congue est" class="img-responsive" src="{{asset('games/images/catalog/bossblog/demo_80x80.jpg')}}"></a>
                   </div>
 
 
@@ -1474,10 +1453,9 @@
             </div>
 
 
-            <div class="bt_video_banner bt-show" id="b_parallax" style="background-image:url(images/catalog/bt_leather/bg_video.jpg);">
+            <div class="bt_video_banner bt-show" id="b_parallax" style="background-image:url({{asset('games/images/catalog/bt_leather/bg_video.jpg')}});">
             </div>
-            <video class="video-js vjs-default-skin" controls="" data-setup="{}" id="bt_video" preload="auto"><source src=
-            "images/catalog/bt_leather/home_session.mp4" type="video/mp4"></video> 
+            <video class="video-js vjs-default-skin" controls="" data-setup="{}" id="bt_video" preload="auto"><source src="{{asset('games/images/catalog/bt_leather/home_session.mp4')}}" type="video/mp4"></video> 
             <script src="{{ asset('games/javascript/bossthemes/video/video.js')}}" type="text/javascript">
             </script>
           </div>
@@ -1515,8 +1493,7 @@
                   <div class="bt-item-extra element-4">
                     <div class="product-thumb bt-item transition">
                       <div class="image">
-                        <a href="pages/product.html"><img alt="Suspendisse accus antium" class="img-responsive" src=
-                        "images/catalog/bt_product/demo_195x273.jpg')}}" title="Suspendisse accus antium"></a>
+                        <a href="pages/product.html"><img alt="Suspendisse accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_195x273.jpg')}}" title="Suspendisse accus antium"></a>
 
                         <div class="button-group bt-button-group hidden-xs">
                           <a href="pages/shoppingcart.html" class="btn-cart"><i class="fa fa-shopping-cart"></i></a> <a href="pages/wishlist.html" title="Add to Wish List" class="btn-wishlist"><i class="fa fa-heart"></i></a>
@@ -1561,8 +1538,7 @@
                   <div class="bt-item-extra element-4">
                     <div class="product-thumb bt-item transition">
                       <div class="image">
-                        <a href="pages/product.html"><img alt="Dolorpelle accus antium" class="img-responsive" src=
-                        "images/catalog/bt_product/demo_195x273.jpg')}}" title="Dolorpelle accus antium"></a>
+                        <a href="pages/product.html"><img alt="Dolorpelle accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_195x273.jpg')}}" title="Dolorpelle accus antium"></a>
 
                         <div class="button-group bt-button-group hidden-xs">
                           <a href="pages/shoppingcart.html" class="btn-cart"><i class="fa fa-shopping-cart"></i></a> <a href="pages/wishlist.html" title="Add to Wish List" class="btn-wishlist"><i class="fa fa-heart"></i></a>
@@ -1602,8 +1578,7 @@
                   <div class="bt-item-extra element-4">
                     <div class="product-thumb bt-item transition">
                       <div class="image">
-                        <a href="pages/product.html"><img alt="Assumenda accus antium" class="img-responsive" src=
-                        "images/catalog/bt_product/demo_195x273.jpg')}}" title="Assumenda accus antium"></a>
+                        <a href="pages/product.html"><img alt="Assumenda accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_195x273.jpg')}}" title="Assumenda accus antium"></a>
 
                         <div class="button-group bt-button-group hidden-xs">
                           <a href="pages/shoppingcart.html" class="btn-cart"><i class="fa fa-shopping-cart"></i></a> <a href="pages/wishlist.html" title="Add to Wish List" class="btn-wishlist"><i class="fa fa-heart"></i></a>
@@ -1643,8 +1618,7 @@
                   <div class="bt-item-extra element-4">
                     <div class="product-thumb bt-item transition">
                       <div class="image">
-                        <a href="pages/product.html"><img alt="Donec vitae accus antium" class="img-responsive" src=
-                        "images/catalog/bt_product/demo_195x273.jpg')}}" title="Donec vitae accus antium"></a>
+                        <a href="pages/product.html"><img alt="Donec vitae accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_195x273.jpg')}}" title="Donec vitae accus antium"></a>
 
                         <div class="button-group bt-button-group hidden-xs">
                           <a href="pages/shoppingcart.html" class="btn-cart"><i class="fa fa-shopping-cart"></i></a> <a href="pages/wishlist.html" title="Add to Wish List" class="btn-wishlist"><i class="fa fa-heart"></i></a>
@@ -1689,8 +1663,7 @@
                   <div class="bt-item-extra element-4">
                     <div class="product-thumb bt-item transition">
                       <div class="image">
-                        <a href="pages/product.html"><img alt="Morbi id accus antium doloremque" class="img-responsive" src=
-                        "images/catalog/bt_product/demo_195x273.jpg')}}" title="Morbi id accus antium doloremque"></a>
+                        <a href="pages/product.html"><img alt="Morbi id accus antium doloremque" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_195x273.jpg')}}" title="Morbi id accus antium doloremque"></a>
 
                         <div class="button-group bt-button-group hidden-xs">
                           <a href="pages/shoppingcart.html" class="btn-cart"><i class="fa fa-shopping-cart"></i></a> <a href="pages/wishlist.html" title="Add to Wish List" class="btn-wishlist"><i class="fa fa-heart"></i></a>
@@ -1725,8 +1698,7 @@
                   <div class="bt-item-extra element-4">
                     <div class="product-thumb bt-item transition">
                       <div class="image">
-                        <a href="pages/product.html"><img alt="Sed sit accus antium doloremque" class="img-responsive" src=
-                        "images/catalog/bt_product/demo_195x273.jpg')}}" title="Sed sit accus antium doloremque"></a>
+                        <a href="pages/product.html"><img alt="Sed sit accus antium doloremque" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_195x273.jpg')}}" title="Sed sit accus antium doloremque"></a>
 
                         <div class="button-group bt-button-group hidden-xs">
                           <a href="pages/shoppingcart.html" class="btn-cart"><i class="fa fa-shopping-cart"></i></a> <a href="pages/wishlist.html" title="Add to Wish List" class="btn-wishlist"><i class="fa fa-heart"></i></a>
@@ -1761,8 +1733,7 @@
                   <div class="bt-item-extra element-4">
                     <div class="product-thumb bt-item transition">
                       <div class="image">
-                        <a href="pages/product.html"><img alt="Impedit Quo accus antium" class="img-responsive" src=
-                        "images/catalog/bt_product/demo_195x273.jpg')}}" title="Impedit Quo accus antium"></a>
+                        <a href="pages/product.html"><img alt="Impedit Quo accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_195x273.jpg')}}" title="Impedit Quo accus antium"></a>
 
                         <div class="button-group bt-button-group hidden-xs">
                           <a href="pages/shoppingcart.html" class="btn-cart"><i class="fa fa-shopping-cart"></i></a> <a href="pages/wishlist.html" title="Add to Wish List" class="btn-wishlist"><i class="fa fa-heart"></i></a>
@@ -1802,8 +1773,7 @@
                   <div class="bt-item-extra element-4">
                     <div class="product-thumb bt-item transition">
                       <div class="image">
-                        <a href="pages/product.html"><img alt="Vestibulum accus antium" class="img-responsive" src=
-                        "images/catalog/bt_product/demo_195x273.jpg')}}" title="Vestibulum accus antium"></a>
+                        <a href="pages/product.html"><img alt="Vestibulum accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_195x273.jpg')}}" title="Vestibulum accus antium"></a>
 
                         <div class="button-group bt-button-group hidden-xs">
                           <a href="pages/shoppingcart.html" class="btn-cart"><i class="fa fa-shopping-cart"></i></a> <a href="pages/wishlist.html" title="Add to Wish List" class="btn-wishlist"><i class="fa fa-heart"></i></a>
@@ -1899,8 +1869,7 @@
                     <div class="bt-item-extra product-list">
                       <div class="product-thumb bt-item transition">
                         <div class="image">
-                          <a href="pages/product.html"><img alt="Assumenda accus antium" class="img-responsive" src=
-                          "images/catalog/bt_product/demo_160x224.jpg')}}"></a>
+                          <a href="pages/product.html"><img alt="Assumenda accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_160x224.jpg')}}"></a>
                         </div>
 
 
@@ -1943,8 +1912,7 @@
                     <div class="bt-item-extra product-list">
                       <div class="product-thumb bt-item transition">
                         <div class="image">
-                          <a href="pages/product.html"><img alt="Dolorpelle accus antium" class="img-responsive" src=
-                          "images/catalog/bt_product/demo_160x224.jpg')}}"></a>
+                          <a href="pages/product.html"><img alt="Dolorpelle accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_160x224.jpg')}}"></a>
                         </div>
 
 
@@ -1987,8 +1955,7 @@
                     <div class="bt-item-extra product-list">
                       <div class="product-thumb bt-item transition">
                         <div class="image">
-                          <a href="pages/product.html"><img alt="Donec est tricies" class="img-responsive" src=
-                          "images/catalog/bt_product/demo_160x224.jpg')}}"></a>
+                          <a href="pages/product.html"><img alt="Donec est tricies" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_160x224.jpg')}}"></a>
                         </div>
 
 
@@ -2038,8 +2005,7 @@
                     <div class="bt-item-extra product-list">
                       <div class="product-thumb bt-item transition">
                         <div class="image">
-                          <a href="pages/product.html"><img alt="Assumenda accus antium" class="img-responsive" src=
-                          "images/catalog/bt_product/demo_160x224.jpg')}}"></a>
+                          <a href="pages/product.html"><img alt="Assumenda accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_160x224.jpg')}}"></a>
                         </div>
 
 
@@ -2082,8 +2048,7 @@
                     <div class="bt-item-extra product-list">
                       <div class="product-thumb bt-item transition">
                         <div class="image">
-                          <a href="pages/product.html"><img alt="Dolorpelle accus antium" class="img-responsive" src=
-                          "images/catalog/bt_product/demo_160x224.jpg')}}"></a>
+                          <a href="pages/product.html"><img alt="Dolorpelle accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_160x224.jpg')}}"></a>
                         </div>
 
 
@@ -2126,8 +2091,7 @@
                     <div class="bt-item-extra product-list">
                       <div class="product-thumb bt-item transition">
                         <div class="image">
-                          <a href="pages/product.html"><img alt="Duis lacus tempor" class="img-responsive" src=
-                          "images/catalog/bt_product/demo_160x224.jpg')}}"></a>
+                          <a href="pages/product.html"><img alt="Duis lacus tempor" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_160x224.jpg')}}"></a>
                         </div>
 
 
@@ -2177,8 +2141,7 @@
                     <div class="bt-item-extra product-list">
                       <div class="product-thumb bt-item transition">
                         <div class="image">
-                          <a href="pages/product.html"><img alt="Assumenda accus antium" class="img-responsive" src=
-                          "images/catalog/bt_product/demo_160x224.jpg')}}"></a>
+                          <a href="pages/product.html"><img alt="Assumenda accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_160x224.jpg')}}"></a>
                         </div>
 
 
@@ -2221,8 +2184,7 @@
                     <div class="bt-item-extra product-list">
                       <div class="product-thumb bt-item transition">
                         <div class="image">
-                          <a href="pages/product.html"><img alt="Donec vitae accus antium" class="img-responsive" src=
-                          "images/catalog/bt_product/demo_160x224.jpg')}}"></a>
+                          <a href="pages/product.html"><img alt="Donec vitae accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_160x224.jpg')}}"></a>
                         </div>
 
 
@@ -2265,8 +2227,7 @@
                     <div class="bt-item-extra product-list">
                       <div class="product-thumb bt-item transition">
                         <div class="image">
-                          <a href="pages/product.html"><img alt="Duis lacus tempor" class="img-responsive" src=
-                          "images/catalog/bt_product/demo_160x224.jpg')}}"></a>
+                          <a href="pages/product.html"><img alt="Duis lacus tempor" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_160x224.jpg')}}"></a>
                         </div>
 
 
@@ -2316,8 +2277,7 @@
                     <div class="bt-item-extra product-list">
                       <div class="product-thumb bt-item transition">
                         <div class="image">
-                          <a href="pages/product.html"><img alt="Dolorpelle accus antium" class="img-responsive" src=
-                          "images/catalog/bt_product/demo_160x224.jpg')}}"></a>
+                          <a href="pages/product.html"><img alt="Dolorpelle accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_160x224.jpg')}}"></a>
                         </div>
 
 
@@ -2360,8 +2320,7 @@
                     <div class="bt-item-extra product-list">
                       <div class="product-thumb bt-item transition">
                         <div class="image">
-                          <a href="pages/product.html"><img alt="Duis lacus tempor" class="img-responsive" src=
-                          "images/catalog/bt_product/demo_160x224.jpg')}}"></a>
+                          <a href="pages/product.html"><img alt="Duis lacus tempor" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_160x224.jpg')}}"></a>
                         </div>
 
 
@@ -2399,8 +2358,7 @@
                     <div class="bt-item-extra product-list">
                       <div class="product-thumb bt-item transition">
                         <div class="image">
-                          <a href="pages/product.html"><img alt="Impedit Quo accus antium" class="img-responsive" src=
-                          "images/catalog/bt_product/demo_160x224.jpg')}}"></a>
+                          <a href="pages/product.html"><img alt="Impedit Quo accus antium" class="img-responsive" src="{{asset('games/images/catalog/bt_product/demo_160x224.jpg')}}"></a>
                         </div>
 
 
@@ -2467,8 +2425,7 @@
             <div class="block-content">
               <div class="main-article col-sm-5 col-xs-12">
                 <div class="image">
-                  <a href="pages/article.html"><img alt="Nisl cursus sollicitudin" class="img-responsive" src=
-                  "images/catalog/bossblog/demo_360x360.jpg')}}"></a>
+                  <a href="pages/article.html"><img alt="Nisl cursus sollicitudin" class="img-responsive" src="{{asset('games/images/catalog/bossblog/demo_360x360.jpg')}}"></a>
                 </div>
 
 
@@ -2494,8 +2451,7 @@
                 <div class="col-sm-12 col-xs-12">
                   <div class="article_content">
                     <div class="image">
-                      <a href="pages/article.html"><img alt="Voluptatem accusantium" class="img-responsive" src=
-                      "images/catalog/bossblog/demo_130x130.jpg')}}"><span class="banner_cat_effect"></span></a>
+                      <a href="pages/article.html"><img alt="Voluptatem accusantium" class="img-responsive" src="{{asset('games/images/catalog/bossblog/demo_130x130.jpg')}}"><span class="banner_cat_effect"></span></a>
                     </div>
 
 
@@ -2529,8 +2485,7 @@
                 <div class="col-sm-12 col-xs-12">
                   <div class="article_content">
                     <div class="image">
-                      <a href="pages/article.html"><img alt="Aliquam pulvinar porttitor" class="img-responsive" src=
-                      "images/catalog/bossblog/demo_130x130.jpg')}}"><span class="banner_cat_effect"></span></a>
+                      <a href="pages/article.html"><img alt="Aliquam pulvinar porttitor" class="img-responsive" src="{{asset('games/images/catalog/bossblog/demo_130x130.jpg')}}"><span class="banner_cat_effect"></span></a>
                     </div>
 
 
@@ -2564,8 +2519,7 @@
                 <div class="col-sm-12 col-xs-12">
                   <div class="article_content">
                     <div class="image">
-                      <a href="pages/article.html"><img alt="Tellus volutpat bibendum" class="img-responsive" src=
-                      "images/catalog/bossblog/demo_130x130.jpg')}}"><span class="banner_cat_effect"></span></a>
+                      <a href="pages/article.html"><img alt="Tellus volutpat bibendum" class="img-responsive" src="{{asset('games/images/catalog/bossblog/demo_130x130.jpg')}}"><span class="banner_cat_effect"></span></a>
                     </div>
 
 
@@ -2602,7 +2556,7 @@
     </div>
 
 
-    <div class="bt-newletter" style="background-image:url(images/catalog/bt_leather/bg_parallax.jpg)">
+    <div class="bt-newletter" style="background-image:url('{{asset('games/images/catalog/bt_leather/bg_parallax.jpg')}}')">
       <div class="footer-newletter">
         <div class="title">
           <h3>Sign up for newsletter</h3>
@@ -2791,7 +2745,7 @@
                       <li class="status-item">
                         <div class="tweet-profile">
                           <a href="https://twitter.com/bossthemes1" title="@bossthemes1"><img alt="bossthemes1" src=
-                          "http://pbs.twimg.com/profile_images/378800000472077363/9a9853fc9bc0250650d5e80d84c7d640_normal.png')}}"></a>
+                          "http://pbs.twimg.com/profile_images/378800000472077363/9a9853fc9bc0250650d5e80d84c7d640_normal.png"></a>
                         </div>
 
 
@@ -2817,7 +2771,7 @@
                       <li class="status-item">
                         <div class="tweet-profile">
                           <a href="https://twitter.com/bossthemes1" title="@bossthemes1"><img alt="bossthemes1" src=
-                          "http://pbs.twimg.com/profile_images/378800000472077363/9a9853fc9bc0250650d5e80d84c7d640_normal.png')}}"></a>
+                          "http://pbs.twimg.com/profile_images/378800000472077363/9a9853fc9bc0250650d5e80d84c7d640_normal.png"></a>
                         </div>
 
 
@@ -2860,8 +2814,7 @@
 
 
                     <li>
-                      <a class="masterCard" href="" title="MasterCard"><img alt="MasterCard" src=
-                      "images/catalog/bt_leather/master.png')}}"></a>
+                      <a class="masterCard" href="" title="MasterCard"><img alt="MasterCard" src="{{asset('games/images/catalog/bt_leather/master.png')}}"></a>
                     </li>
 
 
