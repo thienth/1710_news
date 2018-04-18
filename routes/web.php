@@ -29,18 +29,28 @@ Route::get('lien-he', function(){
 	return "trang lien he";
 })->name('contact');
 
+Route::get('test-layout', function(){
+	return view('test');
+})
 // trang chu/danh muc/chitiet
 Route::get('/{slug?}', function($slug = null){
 	if(!$slug){
 
-		$name = 'le dinh duc';
-		$age = 25;
-		$gender = 10;
+		$people = [
+			[	
+				'name' => 'thu trang', 
+				'gender' => 2, 
+				'image' => 'images/thu-tran.jpg'
+			],
+			[	
+				'name' => 'doan van hau', 
+				'gender' => 1, 
+				'image' => 'images/van-hau.jpg'
+			],
 
-		$arr = ['a', 'b', 'c'];
-		$bio = "<strong>Rat dep trai!!!!</strong>";
+		];
 		// hien thi giao dien trang chu
-		return view('homepage', compact('name', 'age', 'bio', 'gender', 'arr'));
+		return view('homepage', compact('people'));
 	}
 })->name('homepage');
 
