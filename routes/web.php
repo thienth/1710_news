@@ -36,21 +36,9 @@ Route::get('test-layout', function(){
 Route::get('/{slug?}', function($slug = null){
 	if(!$slug){
 
-		$people = [
-			[	
-				'name' => 'thu trang', 
-				'gender' => 2, 
-				'image' => 'images/thu-tran.jpg'
-			],
-			[	
-				'name' => 'doan van hau', 
-				'gender' => 1, 
-				'image' => 'images/van-hau.jpg'
-			],
 
-		];
 		// hien thi giao dien trang chu
-		return view('layouts.client', compact('people'));
+		return view('homepage');
 	}
 })->name('homepage');
 
