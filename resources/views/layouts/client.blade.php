@@ -12,7 +12,7 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
 
-  <title>Opencart Leather Store</title>
+  <title>@yield('title')</title>
   <meta content="My Store" name="description">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <link href="{{ asset('games/images/catalog/bt_leather/Leather_Favicon.jpg')}}" rel="icon">

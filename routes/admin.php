@@ -1,7 +1,7 @@
 <?php 
 
 Route::get('/', function(){
-	return 'Trang dashboard';
+	return view('admin.dashboard');
 });
 
 Route::group(['prefix' => 'categories'], function() {
