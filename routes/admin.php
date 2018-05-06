@@ -6,7 +6,7 @@ Route::get('/', function(){
 
 Route::group(['prefix' => 'categories'], function() {
 	Route::get('/', function(){
-		return 'danh sach danh muc';
+		return view('admin.category.list');
 	})->name('cate.list');
 
 	Route::get('/add', function() {

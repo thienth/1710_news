@@ -52,7 +52,7 @@
 				</a>
 				<ul class="sub-menu">
 					<li>
-						<a href="">
+						<a href="{{ route('cate.list') }}">
 						<i class="icon-list"></i>
 						Danh sách danh mục</a>
 					</li>
