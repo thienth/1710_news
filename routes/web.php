@@ -34,6 +34,31 @@ Route::get('test-layout', function(){
 });
 // trang chu/danh muc/chitiet
 Route::get('/{slug?}', function($slug = null){
+	// raw query
+	// $games = DB::select("select * from games order by id desc");
+	// dd($games);
+	// $games = App\Game::where('price', '>', 1990)
+	// 					->orderBy('name')
+	// 					->get();
+
+
+	// foreach ($games as $g) {
+	// 	echo "<p>" . $g->name . "</p>";
+	// }
+	// 
+	// App\Game::chunk(10, function($games){
+	// 	foreach ($games as $g) {
+	// 		echo "<p>" . $g->name . "</p>";
+	// 	}
+	// });
+
+	// die;
+	// 
+	// dd(App\Game::find([1, 2, 30]));
+	$games = App\Game::where('price', '>', 1990)
+						->first();
+	dd($games);
+
 	if(!$slug){
 
 
