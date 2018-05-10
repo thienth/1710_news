@@ -55,9 +55,47 @@ Route::get('/{slug?}', function($slug = null){
 	// die;
 	// 
 	// dd(App\Game::find([1, 2, 30]));
-	$games = App\Game::where('price', '>', 1990)
-						->first();
-	dd($games);
+	// $games = App\Game::where('price', '>', 1000)
+	// 					->get()
+	// 					->toJson();
+
+	// dd($games);
+	// --------------delete------------------
+	// $game = App\Game::find($slug);
+	// $game->delete();
+	// die;
+	// 
+	// --------------insert ------------------
+	// $game = new App\Game();
+	// $faker = Faker\Factory::create();
+	// $game->name = $faker->name;
+	// $game->slug = str_slug($game->name);
+	// $game->cate_id = rand(1, 4);
+	// $game->feature_image = $faker->imageUrl(800, 600, 'cats');
+	// $game->price = $faker->randomFloat($nbMaxDecimals = 2, $min = 0, $max = 2000);
+	// $game->description = $faker->realText($maxNbChars = 200, $indexSize = rand(1, 5));
+
+	// var_dump($game->save());
+	// echo "<br>";
+	// dd($game->id);
+	
+	// --------------insert ------------------
+	// $game = App\Game::find(2003);
+	// var_dump($game);
+	// echo "<br>";
+	// $faker = Faker\Factory::create();
+	// $game->name = $faker->name;
+	// $game->slug = str_slug($game->name);
+	// $game->cate_id = rand(1, 4);
+	// $game->feature_image = $faker->imageUrl(800, 600, 'cats');
+	// $game->price = $faker->randomFloat($nbMaxDecimals = 2, $min = 0, $max = 2000);
+	// $game->description = $faker->realText($maxNbChars = 200, $indexSize = rand(1, 5));
+
+	// var_dump($game->save());
+	// echo "<br>";
+	// dd($game);
+
+
 
 	if(!$slug){
 

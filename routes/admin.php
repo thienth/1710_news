@@ -6,6 +6,7 @@ Route::get('/', function(){
 
 Route::group(['prefix' => 'categories'], function() {
 	Route::get('/', function(){
+
 		return view('admin.category.list');
 	})->name('cate.list');
 
@@ -22,10 +23,13 @@ Route::group(['prefix' => 'categories'], function() {
 	})->name('cate.remove');
 });
 
-Route::group(['prefix' => 'posts'], function() {
+Route::group(['prefix' => 'games'], function() {
 	Route::get('/', function(){
-		return 'danh sach bai viet';
-	})->name('post.list');
+
+		$games = App\Game::all();
+
+		return view('admin.game.list', compact('games'));
+	})->name('game.list');
 
 	Route::get('/add', function() {
 	    return 'tao moi bai viet';
@@ -36,8 +40,12 @@ Route::group(['prefix' => 'posts'], function() {
 	})->name('post.edit');
 
 	Route::get('/remove/{id}', function($id) {
-	    return 'sua bai viet';
-	})->name('post.remove');
+		$game = App\Game::find($id);
+		if($game !== null){
+			$game->delete();
+		}
+	    return redirect(route('game.list'));
+	})->name('game.remove');
 });
 
 Route::group(['prefix' => 'comments'], function() {
