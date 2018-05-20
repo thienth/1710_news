@@ -39,8 +39,8 @@ Route::group(['prefix' => 'games'], function() {
 
 	Route::get('/add', function() {
 		$model = new App\Game();
-
-	    return view('admin.game.form', compact('model'));
+		$cates = App\Category::all();
+	    return view('admin.game.form', compact('model', 'cates'));
 	})->name('game.add');
 
 	Route::get('/edit/{id}', function($id) {
@@ -49,7 +49,15 @@ Route::group(['prefix' => 'games'], function() {
 	})->name('game.edit');
 
 	Route::post('/save', function(Request $rq) {
-	    return 'luu bai viet';
+
+		$model = new App\Game();
+
+		// check App\Game thuoc tinh $fillable
+		$model->fill($rq->all()); 
+
+	    $model->save();
+
+	    return redirect(route('game.list'));
 	})->name('game.save');
 
 	Route::get('/remove/{id}', function($id) {

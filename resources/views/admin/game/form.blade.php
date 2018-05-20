@@ -3,10 +3,20 @@
 @section('content')
 <div class="col-md-6 col-md-offset-3">
 	<form id="gameForm" action="{{route('game.save')}}" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="id" value="{{$model->id}}">
 		<div class="form-group">
 			<label>Tên: </label>
 			<input class="form-control" type="text" name="name" value="{{$model->name}}" placeholder="Điền tên trò chơi">
 		</div>
+		<div class="form-group">
+			<label>Danh mục: </label>
+			<select name="cate_id" class="form-control">
+				@foreach($cates as $c)
+				<option value="{{$c->id}}">{{$c->name}}</option>
+				@endforeach
+			</select>
+		</div>
+
 		<div class="form-group">
 			<label>Đường dẫn: </label>
 			<input class="form-control" type="text" name="slug" value="{{$model->slug}}" placeholder="Đường dẫn website">
