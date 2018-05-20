@@ -23,21 +23,34 @@ Route::group(['prefix' => 'categories'], function() {
 	})->name('cate.remove');
 });
 
+use Illuminate\Http\Request;
 Route::group(['prefix' => 'games'], function() {
-	Route::get('/', function(){
-
-		$games = App\Game::all();
-
-		return view('admin.game.list', compact('games'));
+	Route::get('/', function(Request $rq){
+		$keyword = $rq->keyword;
+		if($keyword !== null){
+			$games = App\Game::where('name', 'like', "%$rq->keyword%")
+								->paginate(20);
+			$games->withPath("?keyword=$keyword");
+		}else{
+			$games = App\Game::paginate(20);
+		}
+		return view('admin.game.list', compact('games', 'keyword'));
 	})->name('game.list');
 
 	Route::get('/add', function() {
-	    return 'tao moi bai viet';
-	})->name('post.add');
+		$model = new App\Game();
+
+	    return view('admin.game.form', compact('model'));
+	})->name('game.add');
 
 	Route::get('/edit/{id}', function($id) {
-	    return 'sua bai viet';
-	})->name('post.edit');
+		$model = App\Game::find($id);
+	    return view('admin.game.form', compact('model'));
+	})->name('game.edit');
+
+	Route::post('/save', function(Request $rq) {
+	    return 'luu bai viet';
+	})->name('game.save');
 
 	Route::get('/remove/{id}', function($id) {
 		$game = App\Game::find($id);
