@@ -45,7 +45,26 @@
 @endsection
 @section('js')
 <script type="text/javascript">
-	
+	var checkSlug = true;
+	$.validator.addMethod("thienth", function(value, element, option) {
+		console.log(value, element, option)
+
+		$.ajax({
+			url: option[1],
+			method: "POST",
+			data: {
+				id: option[0] == "" ? -1 : option[0],
+				slug: value
+			},
+			dataType: "JSON",
+			success: function(res){
+				console.log(res);
+			}
+		})
+
+	  return false;
+	}, "Thienth Rule luon tra ve false");
+
 	$('#gameForm').validate({
 		rules: {
 			name: {
@@ -53,7 +72,8 @@
 				maxlength: 20
 			},
 			slug: {
-				required: true
+				required: true,
+				thienth: ['{{$model->id}}', '{{route('game.checkSlug')}}']
 			},
 			feature_image: {
 				extension: "jpg|png|gif"
