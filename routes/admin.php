@@ -35,11 +35,7 @@ Route::group(['prefix' => 'games'], function() {
 
 	Route::get('/remove/{id}', 'Admin\GameController@remove')->name('game.remove');
 
-	Route::post('/check-slug', function(Request $rq){
-
-		return response()->json(['data' => ['id' => $rq->id, 'slug' => $rq->slug],'result' => false]);
-		
-	})->name('game.checkSlug');
+	Route::post('/check-slug', 'Admin\GameController@checkSlug')->name('game.checkSlug');
 });
 
 Route::group(['prefix' => 'comments'], function() {

@@ -46,8 +46,7 @@
 @section('js')
 <script type="text/javascript">
 	var checkSlug = true;
-	$.validator.addMethod("thienth", function(value, element, option) {
-		console.log(value, element, option)
+	$.validator.addMethod("checkSlug", function(value, element, option) {
 
 		$.ajax({
 			url: option[1],
@@ -58,12 +57,12 @@
 			},
 			dataType: "JSON",
 			success: function(res){
-				console.log(res);
+				checkSlug = res.result;
 			}
-		})
+		});
 
-	  return false;
-	}, "Thienth Rule luon tra ve false");
+	  return checkSlug;
+	}, "Đường dẫn đã tồn tại, vui lòng nhập đường dẫn khác");
 
 	$('#gameForm').validate({
 		rules: {
@@ -73,7 +72,7 @@
 			},
 			slug: {
 				required: true,
-				thienth: ['{{$model->id}}', '{{route('game.checkSlug')}}']
+				checkSlug: ['{{$model->id}}', '{{route('game.checkSlug')}}']
 			},
 			feature_image: {
 				extension: "jpg|png|gif"

@@ -52,4 +52,18 @@ class GameController extends Controller
 		}
 	    return redirect(route('game.list'));
 	}
+
+	function checkSlug(Request $rq){
+		if($rq->id <= 0){
+			$count = Game::where('slug', $rq->slug)->count();
+		}else{
+			$listGame = Game::where('slug', $rq->slug)
+						->get();
+			$listGame = $listGame->whereNotIn('id', [$rq->id]);
+			$count = count($listGame);
+		}
+
+		$result = $count == 0 ? true : false;
+		return response()->json(['result' => $result]);
+	}
 }
