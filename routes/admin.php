@@ -25,48 +25,15 @@ Route::group(['prefix' => 'categories'], function() {
 
 use Illuminate\Http\Request;
 Route::group(['prefix' => 'games'], function() {
-	Route::get('/', function(Request $rq){
-		$keyword = $rq->keyword;
-		if($keyword !== null){
-			$games = App\Game::where('name', 'like', "%$rq->keyword%")
-								->paginate(20);
-			$games->withPath("?keyword=$keyword");
-		}else{
-			$games = App\Game::paginate(20);
-		}
-		return view('admin.game.list', compact('games', 'keyword'));
-	})->name('game.list');
+	Route::get('/', 'Admin\GameController@index')->name('game.list');
 
-	Route::get('/add', function() {
-		$model = new App\Game();
-		$cates = App\Category::all();
-	    return view('admin.game.form', compact('model', 'cates'));
-	})->name('game.add');
+	Route::get('/add', 'Admin\GameController@add')->name('game.add');
 
-	Route::get('/edit/{id}', function($id) {
-		$model = App\Game::find($id);
-	    return view('admin.game.form', compact('model'));
-	})->name('game.edit');
+	Route::get('/edit/{id}', 'Admin\GameController@edit')->name('game.edit');
 
-	Route::post('/save', function(Request $rq) {
+	Route::post('/save', 'Admin\GameController@save')->name('game.save');
 
-		$model = new App\Game();
-
-		// check App\Game thuoc tinh $fillable
-		$model->fill($rq->all()); 
-
-	    $model->save();
-
-	    return redirect(route('game.list'));
-	})->name('game.save');
-
-	Route::get('/remove/{id}', function($id) {
-		$game = App\Game::find($id);
-		if($game !== null){
-			$game->delete();
-		}
-	    return redirect(route('game.list'));
-	})->name('game.remove');
+	Route::get('/remove/{id}', 'Admin\GameController@remove')->name('game.remove');
 });
 
 Route::group(['prefix' => 'comments'], function() {
