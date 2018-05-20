@@ -40,26 +40,33 @@
 		rules: {
 			name: {
 				required: true,
-				maxlength: 10
+				maxlength: 20
 			},
 			slug: {
 				required: true
 			},
 			feature_image: {
-
+				extension: "jpg|png|gif"
 			},
 			price: {
-
-			},
-			description: {
-
+				required: true,
+				min: 0
 			}
 		},
 		messages: {
 			name: {
-				required: 'Vui lòng điền tên trò chơi',
+				required: 'Vui lòng nhập tên trò chơi',
 				maxlength: 'Độ dài không vượt quá 10 ký tự'
 			},
+			slug:{
+				required: 'Vui lòng nhập đường dẫn'
+			},
+			feature_image: {
+				extension: "Không đúng định dạng ảnh"
+			},price: {
+				required: 'Vui lòng nhập giá bán trò chơi',
+				min: 'Giá không được nhỏ hơn 0'
+			}
 		}
 	});
 </script>
