@@ -3,10 +3,14 @@
 @section('content')
 <div class="col-md-6 col-md-offset-3">
 	<form id="gameForm" action="{{route('game.save')}}" method="post" enctype="multipart/form-data">
+		@csrf
 		<input type="hidden" name="id" value="{{$model->id}}">
 		<div class="form-group">
 			<label>Tên: </label>
-			<input class="form-control" type="text" name="name" value="{{$model->name}}" placeholder="Điền tên trò chơi">
+			<input id="game-name" class="form-control" type="text" name="name" value="{{$model->name}}" placeholder="Điền tên trò chơi">
+			@if($errors)
+				<span class="text-danger">{{$errors->first('name')}}</span>
+			@endif
 		</div>
 		<div class="form-group">
 			<label>Danh mục: </label>
@@ -19,7 +23,10 @@
 
 		<div class="form-group">
 			<label>Đường dẫn: </label>
-			<input class="form-control" type="text" name="slug" value="{{$model->slug}}" placeholder="Đường dẫn website">
+			<input id="slug" class="form-control" type="text" name="slug" value="{{$model->slug}}" placeholder="Đường dẫn website">
+			@if($errors)
+				<span class="text-danger">{{$errors->first('slug')}}</span>
+			@endif
 		</div>
 		<div class="form-group">
 			<label>Ảnh đại diện: </label>
@@ -31,7 +38,7 @@
 		</div>
 		<div class="form-group">
 			<label>Mô tả: </label>
-			<textarea name="description" class="form-control">{{$model->description}}</textarea>
+			<textarea id="editor" name="description" class="form-control">{{$model->description}}</textarea>
 		</div>
 		<div class="text-center">
 			<button class="btn btn-primary">Lưu</button>
@@ -45,6 +52,21 @@
 @endsection
 @section('js')
 <script type="text/javascript">
+	$('#game-name').on('keyup', function(){
+		var title = $(this).val();
+		$.ajax({
+			url: '{{route('generate.slug')}}',
+			method: "POST",
+			data: {
+				str: title
+			},
+			dataType: "JSON",
+			success: function(res){
+				$('#slug').val(res);
+			}
+		});
+	});
+
 	var checkSlug = true;
 	$.validator.addMethod("checkSlug", function(value, element, option) {
 
@@ -64,7 +86,7 @@
 	  return checkSlug;
 	}, "Đường dẫn đã tồn tại, vui lòng nhập đường dẫn khác");
 
-	$('#gameForm').validate({
+	$('#gameForm1').validate({
 		rules: {
 			name: {
 				required: true,

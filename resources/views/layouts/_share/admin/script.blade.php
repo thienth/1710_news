@@ -52,11 +52,14 @@
 <script src="{{asset('assets/admin/pages/scripts/tasks.js')}}" type="text/javascript"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
 {{-- Tiny MCE --}}
-<script type="text/javascript" src="{{ asset('tinymce/tinymce.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/custom-validate-method.js') }}"></script>
+<script type="text/javascript" src="{{ asset('assets/global/plugins/tinymce/tinymce.min.js') }}"></script>
+
 
 <script type="text/javascript">
-   tinymce.init({ selector:'textarea#editor' });
+   tinymce.init({ 
+   		selector:'textarea#editor',
+   		plugins : 'advlist autolink link image lists charmap print preview'
+   	 });
 </script>
 <script>
 jQuery(document).ready(function() {    

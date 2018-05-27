@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use \File;
 use App\Game;
 use App\Category;
 
@@ -34,11 +35,31 @@ class GameController extends Controller
 	}
 
 	function save(Request $rq) {
+		$messages = [
+		    'name.required' => 'Vui lòng nhập tên!',
+		    'name.max' => 'Độ dài không quá 10 ký tự!',
+		    'slug.required' => 'Vui lòng nhập đường dẫn!',
+		];
+		$rq->validate([
+	        'name' => 'required|max:10',
+	        'slug' => 'required'
+	    ], $messages);
 
-		$model = new Game();
+		if($rq->id != null){
+			$model = Game::find($rq->id);
+		}else{
+			$model = new Game();
+		}
 
 		// check Game thuoc tinh $fillable
 		$model->fill($rq->all()); 
+
+		if($rq->hasFile('feature_image')){
+			$ext = File::extension($rq->feature_image->getClientOriginalName());
+			$fileName = $rq->slug . '-' . uniqid() . '.' . $ext;
+			$model->feature_image = $rq->feature_image->storeAs('uploads', $fileName);
+		}
+		// dd($model->feature_image);
 
 	    $model->save();
 

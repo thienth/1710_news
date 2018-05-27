@@ -4,6 +4,11 @@ Route::get('/', function(){
 	return view('admin.dashboard');
 });
 
+use Illuminate\Http\Request;
+Route::post('slug-generate', function(Request $rq){
+	return response()->json(str_slug($rq->str));
+})->name('generate.slug');
+
 Route::group(['prefix' => 'categories'], function() {
 	Route::get('/', function(){
 
@@ -23,7 +28,6 @@ Route::group(['prefix' => 'categories'], function() {
 	})->name('cate.remove');
 });
 
-use Illuminate\Http\Request;
 Route::group(['prefix' => 'games'], function() {
 	Route::get('/', 'Admin\GameController@index')->name('game.list');
 

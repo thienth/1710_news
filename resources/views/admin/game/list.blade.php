@@ -15,7 +15,7 @@
 		<tr>
 			<th>ID</th>
 			<th>Tên game</th>
-			{{-- <th>Ảnh</th> --}}
+			<th>Ảnh</th>
 			<th>Danh mục</th>
 			<th>Gía</th>
 			<th>
@@ -31,10 +31,12 @@
 			@foreach($games as $g)
 			<tr>
 				<td>{{$g->id}}</td>
-				<td>{{$g->name}}</td>
-				{{-- <td>
-					<img src="{{$g->feature_image}}" width="100" >
-				</td> --}}
+				<td>{!! $g->name !!}</td>
+				<td>
+					<img src="{{asset($g->feature_image)}}" 
+						onerror="this.src='{{asset('default-image.jpg')}}'" 
+					 width="100" >
+				</td>
 				<td>{{$g->cate_id}}</td>
 				<td>{{$g->price}}</td>
 				<td>
