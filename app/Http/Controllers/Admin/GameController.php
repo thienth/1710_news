@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use \File;
+use App\Http\Requests\SaveGameRequest;
 use App\Game;
 use App\Category;
 
@@ -34,16 +35,17 @@ class GameController extends Controller
 	    return view('admin.game.form', compact('model', 'cates'));
 	}
 
-	function save(Request $rq) {
-		$messages = [
-		    'name.required' => 'Vui lòng nhập tên!',
-		    'name.max' => 'Độ dài không quá 10 ký tự!',
-		    'slug.required' => 'Vui lòng nhập đường dẫn!',
-		];
-		$rq->validate([
-	        'name' => 'required|max:10',
-	        'slug' => 'required'
-	    ], $messages);
+	function save(SaveGameRequest $rq) {
+		// $messages = [
+		//     'name.required' => 'Vui lòng nhập tên!',
+		//     'name.max' => 'Độ dài không quá 100 ký tự!',
+		//     'slug.required' => 'Vui lòng nhập đường dẫn!',
+		//     'slug.unique' => 'Đường dẫn đã tồn tại, vui lòng chọn đường dẫn khác!',
+		// ];
+		// $rq->validate([
+	        
+	 //        ]
+	 //    ], $messages);
 
 		if($rq->id != null){
 			$model = Game::find($rq->id);

@@ -58,7 +58,8 @@
 			url: '{{route('generate.slug')}}',
 			method: "POST",
 			data: {
-				str: title
+				str: title,
+				'_token': '{{csrf_token()}}'
 			},
 			dataType: "JSON",
 			success: function(res){
@@ -75,7 +76,8 @@
 			method: "POST",
 			data: {
 				id: option[0] == "" ? -1 : option[0],
-				slug: value
+				slug: value,
+				'_token': '{{csrf_token()}}'
 			},
 			dataType: "JSON",
 			success: function(res){
