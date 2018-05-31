@@ -10,8 +10,20 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('login', function() {
-    return 'login page';
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+Route::post('cp-login', function(Request $rq) {
+    if (Auth::attempt(['email' => $rq->email, 'password' => $rq->password])) {
+        // Authentication passed...
+        return redirect()->route('game.list');
+    }else{
+    	return view('auth.login');
+    }
+})->name('login');
+
+Route::get('cp-login', function() {
+    return view('auth.login');
 })->name('login');
 
 

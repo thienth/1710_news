@@ -31,4 +31,12 @@ class SaveGameRequest extends FormRequest
             ]
         ];
     }
+    public function messages(){
+        return [
+            'name.required' => 'Vui lòng nhập tên!',
+            'name.max' => 'Độ dài không quá 100 ký tự!',
+            'slug.required' => 'Vui lòng nhập đường dẫn!',
+            'slug.unique' => 'Đường dẫn đã tồn tại, vui lòng chọn đường dẫn khác!',
+        ];
+    }
 }
