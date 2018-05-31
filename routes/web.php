@@ -14,8 +14,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 Route::post('cp-login', function(Request $rq) {
-    if (Auth::attempt(['email' => $rq->email, 'password' => $rq->password])) {
-        // Authentication passed...
+	$remember = $rq->has('remember') ? true : false;
+    if (Auth::attempt(['email' => $rq->email, 'password' => $rq->password], $remember)) {
         return redirect()->route('game.list');
     }else{
     	return view('auth.login');
@@ -28,7 +28,8 @@ Route::get('cp-login', function() {
 
 
 Route::any('logout', function(){
-	return 'logout';
+	Auth::logout();
+	return redirect()->route('homepage');
 })->name('logout');
 
 // Tim kiem
