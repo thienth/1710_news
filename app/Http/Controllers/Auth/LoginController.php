@@ -36,4 +36,13 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    public function login(Request $rq){
+        $remember = $rq->has('remember') ? true : false;
+        if (Auth::attempt(['email' => $rq->email, 'password' => $rq->password, 'active' => 1], $remember)) {
+            return redirect()->route('game.list');
+        }else{
+            return view('auth.login');
+        }
+    }
 }
