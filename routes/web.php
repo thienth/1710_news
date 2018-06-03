@@ -39,27 +39,18 @@ Route::get('test-layout', function(){
 	return view('test');
 });
 
-// Route::get('sendemail/{content}', function($content) {
-// 	Mail::send('emails.mail', ['name' => 'thienth', 'body' => $content], function($message) {
-
-// 		$users = App\User::where('id', 2)->get();
-// 		foreach ($users as $u) {
-// 			$message->to($u->email);
-// 		}
-
-// 	    $message->subject('Artisans Web Testing Mail');
-// 	    $message->from('thienth@fpt.edu.vn','Thienth fpt');
-// 	});
-
-// 	return 'send email success!';
-// });
 Route::get('register', 'RegisterController@index')->name('register');
 Route::post('register', 'RegisterController@createUser');
 
 Route::get('verify/register/{token}', 'RegisterController@verify')->name('verify_user');
-
+use Carbon\Carbon;
 // trang chu/danh muc/chitiet
 Route::get('/{slug?}', function($slug = null){
+	// $past = Carbon::parse('2018-06-02 11:33:49');
+	// $now = Carbon::now();
+	// $diff = $now->diffInHours($past);
+	// dd($diff);
+
 	if(!$slug){
 		// hien thi giao dien trang chu
 		return view('homepage');
