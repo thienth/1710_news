@@ -45,74 +45,23 @@ Route::get('lien-he', function(){
 Route::get('test-layout', function(){
 	return view('test');
 });
+
+Route::get('sendemail/{content}', function($content) {
+	Mail::send('emails.mail', ['name' => 'thienth', 'body' => $content], function($message) {
+	    $message->to('thienth32@gmail.com', 'ThienTH')
+	    		->to('duyquangnguyen10296@gmail.com')
+	    		->cc('d1396it@gmail.com')
+	    		->bcc('haunt42@gmail.com')
+	            ->subject('Artisans Web Testing Mail');
+	    $message->from('thienth@fpt.edu.vn','Thienth fpt');
+	});
+
+	return 'send email success!';
+});
+
 // trang chu/danh muc/chitiet
 Route::get('/{slug?}', function($slug = null){
-	// raw query
-	// $games = DB::select("select * from games order by id desc");
-	// dd($games);
-	// $games = App\Game::where('price', '>', 1990)
-	// 					->orderBy('name')
-	// 					->get();
-
-
-	// foreach ($games as $g) {
-	// 	echo "<p>" . $g->name . "</p>";
-	// }
-	// 
-	// App\Game::chunk(10, function($games){
-	// 	foreach ($games as $g) {
-	// 		echo "<p>" . $g->name . "</p>";
-	// 	}
-	// });
-
-	// die;
-	// 
-	// dd(App\Game::find([1, 2, 30]));
-	// $games = App\Game::where('price', '>', 1000)
-	// 					->get()
-	// 					->toJson();
-
-	// dd($games);
-	// --------------delete------------------
-	// $game = App\Game::find($slug);
-	// $game->delete();
-	// die;
-	// 
-	// --------------insert ------------------
-	// $game = new App\Game();
-	// $faker = Faker\Factory::create();
-	// $game->name = $faker->name;
-	// $game->slug = str_slug($game->name);
-	// $game->cate_id = rand(1, 4);
-	// $game->feature_image = $faker->imageUrl(800, 600, 'cats');
-	// $game->price = $faker->randomFloat($nbMaxDecimals = 2, $min = 0, $max = 2000);
-	// $game->description = $faker->realText($maxNbChars = 200, $indexSize = rand(1, 5));
-
-	// var_dump($game->save());
-	// echo "<br>";
-	// dd($game->id);
-	
-	// --------------insert ------------------
-	// $game = App\Game::find(2003);
-	// var_dump($game);
-	// echo "<br>";
-	// $faker = Faker\Factory::create();
-	// $game->name = $faker->name;
-	// $game->slug = str_slug($game->name);
-	// $game->cate_id = rand(1, 4);
-	// $game->feature_image = $faker->imageUrl(800, 600, 'cats');
-	// $game->price = $faker->randomFloat($nbMaxDecimals = 2, $min = 0, $max = 2000);
-	// $game->description = $faker->realText($maxNbChars = 200, $indexSize = rand(1, 5));
-
-	// var_dump($game->save());
-	// echo "<br>";
-	// dd($game);
-
-
-
 	if(!$slug){
-
-
 		// hien thi giao dien trang chu
 		return view('homepage');
 	}
